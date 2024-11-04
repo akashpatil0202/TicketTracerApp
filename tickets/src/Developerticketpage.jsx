@@ -10,8 +10,11 @@ const DeveloperTicketsPage = () => {
   useEffect(() => {
     const fetchDeveloper = async () => {
       try {
+        // const response = await axios.get(
+        //   `http://localhost:3001/developers/${id}`
+        // );
         const response = await axios.get(
-          `http://localhost:3001/developers/${id}`
+          `https://67288abe270bd0b975561009.mockapi.io/api/developers/${id}`
         );
 
         setDeveloper(response.data);

@@ -12,7 +12,11 @@ const HomePage = () => {
   useEffect(() => {
     const fetchDevelopers = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/developers");
+        // const response = await axios.get("http://localhost:3001/developers");
+
+        const response = await axios.get(
+          "https://67288abe270bd0b975561009.mockapi.io/api/developers"
+        );
         setDevelopers(response.data);
       } catch (error) {
         console.error("Error fetching developers:", error);

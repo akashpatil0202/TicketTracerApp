@@ -41,7 +41,10 @@ const LoginPage = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:3001/admins");
+      // const response = await axios.get("http://localhost:3001/admins");
+      const response = await axios.get(
+        "https://67288abe270bd0b975561009.mockapi.io/api/admins"
+      );
       const admins = response.data;
 
       const admin = admins.find(
