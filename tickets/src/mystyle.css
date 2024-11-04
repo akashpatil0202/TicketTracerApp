@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.logout-button {
+  width: 80px;
+  height: 30px;
+  background-color: #13191f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background-color: red;
+}
+
+.developer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.developer-card {
+  background: #e7f3fe;
+  border: 1px solid #b1d4fe;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+  color: #333;
+}
+
+.developer-card:hover {
+  background: #237eda;
+  transform: translateY(-5px);
+}
+
+.back-button {
+  width: 100px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container1 {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #13191f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.ticket-list {
+  margin-top: 20px;
+}
+
+.ticket {
+  background: #e7f3fe;
+  border: 1px solid #b1d4fe;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.ticket.pending {
+  color: red;
+  font-weight: bold;
+}
+
+.ticket:hover {
+  background: #d0e4ff;
+}
+
+.ticket div {
+  margin-bottom: 5px;
+}
+
+.login-container {
+  max-width: 350px;
+  height: 340px;
+  margin: auto;
+  margin-top: 4rem;
+  background: linear-gradient(to right, #50c9c3, #96deda);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 12rem;
+  height: 8rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(31, 145, 239);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: rgb(25, 115, 200);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .filter input[type="date"] {
+    width: 100%;
+    max-width: none;
+  }
+}

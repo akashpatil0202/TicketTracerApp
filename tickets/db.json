@@ -1,0 +1,200 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "admin2",
+      "password": "admin2"
+    }
+  ],
+  "developers": [
+    {
+      "id": "1",
+      "name": "Swapnil Vhanale",
+      "tickets": [
+        {
+          "id": 1,
+          "title": "Bug Fix",
+          "status": "assigned",
+          "date": "2024-10-27"
+        },
+        {
+          "id": 2,
+          "title": "Feature Request",
+          "status": "pending",
+          "date": "2024-10-28"
+        },
+        {
+          "id": 3,
+          "title": "API Integration",
+          "status": "assigned",
+          "date": "2024-10-25"
+        },
+        {
+          "id": 4,
+          "title": "Enhancement",
+          "status": "assigned",
+          "date": "2024-10-17"
+        },
+        {
+          "id": 5,
+          "title": "Task",
+          "status": "pending",
+          "date": "2024-10-26"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Akshay Jagadale",
+      "tickets": [
+        {
+          "id": 1,
+          "title": "Bug Fix",
+          "status": "assigned",
+          "date": "2024-10-27"
+        },
+        {
+          "id": 2,
+          "title": "Feature Request",
+          "status": "pending",
+          "date": "2024-10-28"
+        },
+        {
+          "id": 3,
+          "title": "API Integration",
+          "status": "assigned",
+          "date": "2024-10-25"
+        },
+        {
+          "id": 4,
+          "title": "Enhancement",
+          "status": "assigned",
+          "date": "2024-10-17"
+        },
+        {
+          "id": 5,
+          "title": "Task",
+          "status": "pending",
+          "date": "2024-10-26"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Santosh Divate",
+      "tickets": [
+        {
+          "id": 1,
+          "title": "Bug Fix",
+          "status": "assigned",
+          "date": "2024-10-27"
+        },
+        {
+          "id": 2,
+          "title": "Feature Request",
+          "status": "pending",
+          "date": "2024-10-28"
+        },
+        {
+          "id": 3,
+          "title": "API Integration",
+          "status": "assigned",
+          "date": "2024-10-25"
+        },
+        {
+          "id": 4,
+          "title": "Enhancement",
+          "status": "assigned",
+          "date": "2024-10-17"
+        },
+        {
+          "id": 5,
+          "title": "Task",
+          "status": "pending",
+          "date": "2024-10-26"
+        }
+      ]
+    },
+
+    {
+      "id": "4",
+      "name": "Ajit Vandure",
+      "tickets": [
+        {
+          "id": 1,
+          "title": "Bug Fix",
+          "status": "assigned",
+          "date": "2024-10-27"
+        },
+        {
+          "id": 2,
+          "title": "Feature Request",
+          "status": "pending",
+          "date": "2024-10-28"
+        },
+        {
+          "id": 3,
+          "title": "API Integration",
+          "status": "assigned",
+          "date": "2024-10-25"
+        },
+        {
+          "id": 4,
+          "title": "Enhancement",
+          "status": "assigned",
+          "date": "2024-10-17"
+        },
+        {
+          "id": 5,
+          "title": "Task",
+          "status": "pending",
+          "date": "2024-10-26"
+        }
+      ]
+    },
+
+    {
+      "id": "5",
+      "name": "John Wick",
+      "tickets": [
+        {
+          "id": 1,
+          "title": "Bug Fix",
+          "status": "assigned",
+          "date": "2024-10-27"
+        },
+        {
+          "id": 2,
+          "title": "Feature Request",
+          "status": "pending",
+          "date": "2024-10-28"
+        },
+        {
+          "id": 3,
+          "title": "API Integration",
+          "status": "assigned",
+          "date": "2024-10-25"
+        },
+        {
+          "id": 4,
+          "title": "Enhancement",
+          "status": "assigned",
+          "date": "2024-10-17"
+        },
+        {
+          "id": 5,
+          "title": "Task",
+          "status": "pending",
+          "date": "2024-10-26"
+        }
+      ]
+    }
+
+
+  ]
+}
