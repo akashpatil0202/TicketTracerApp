@@ -1,18 +1,12 @@
 import { useParams } from "react-router-dom";
-// import { developersData } from "./data";
-import DeveloperTicketsPage from "./Developerticketpage";
+import DeveloperTicketsPage from "./DeveloperTicketsPage";
 import "./mystyle.css";
 
 const DeveloperTicketsPageWrapper = () => {
   const { id } = useParams();
   const developerIndex = parseInt(id);
 
-  if (
-    isNaN(developerIndex) ||
-    developerIndex < 0
-    // ||
-    // developerIndex >= developersData.length
-  ) {
+  if (isNaN(developerIndex) || developerIndex < 0) {
     return <div>Developer not found</div>;
   }
 

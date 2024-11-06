@@ -1,10 +1,9 @@
-import { useEffect, useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState, useContext, Link } from "react";
 import axios from "axios";
 import { AuthContext } from "./AuthContext";
 import "./mystyle.css";
 
-const Subdevloper = () => {
+const Subdeveloper = () => {
   const [developers, setDevelopers] = useState([]);
 
   useEffect(() => {
@@ -26,9 +25,6 @@ const Subdevloper = () => {
 
   return (
     <div className="container">
-      <button onClick={handleLogout} className="logout-button">
-        Logout
-      </button>
       <h1>{developers.name}</h1>
 
       <div className="developer-list">
@@ -50,4 +46,4 @@ const Subdevloper = () => {
   );
 };
 
-export default Subdevloper;
+export default Subdeveloper;
