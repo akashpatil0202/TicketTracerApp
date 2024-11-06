@@ -11,6 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginPage />} />
+
           <Route
             path="/home"
             element={
@@ -21,7 +22,7 @@ function App() {
           />
 
           <Route
-            path="/developer/:id"
+            path="/developer/:developerId"
             element={
               <PrivateRoute>
                 <DeveloperTicketsPageWrapper />

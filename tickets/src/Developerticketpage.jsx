@@ -1,30 +1,25 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./mystyle.css";
-const DeveloperTicketsPage = () => {
-  const { id } = useParams();
+
+const DeveloperTicketsPage = ({ developerId }) => {
   const [developer, setDeveloper] = useState(null);
   const [filterDate, setFilterDate] = useState("");
 
   useEffect(() => {
     const fetchDeveloper = async () => {
       try {
-        // const response = await axios.get(
-        //   `http://localhost:3001/developers/${id}`
-        // );
         const response = await axios.get(
-          `https://67288abe270bd0b975561009.mockapi.io/api/developers/${id}`
+          `http://localhost:3001/developers/${developerId}`
         );
-
         setDeveloper(response.data);
       } catch (error) {
         console.error("Error fetching developer tickets:", error);
       }
     };
-
     fetchDeveloper();
-  }, [id]);
+  }, [developerId]);
 
   const handleFilterChange = (event) => {
     setFilterDate(event.target.value);

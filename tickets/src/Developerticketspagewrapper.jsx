@@ -1,16 +1,11 @@
 import { useParams } from "react-router-dom";
-import DeveloperTicketsPage from "./DeveloperTicketsPage";
-import "./mystyle.css";
+import DeveloperTicketsPage from "./Developerticketpage";
 
 const DeveloperTicketsPageWrapper = () => {
-  const { id } = useParams();
-  const developerIndex = parseInt(id);
+  const { developerId } = useParams();
+  if (!developerId) return <div>Developer not found</div>;
 
-  if (isNaN(developerIndex) || developerIndex < 0) {
-    return <div>Developer not found</div>;
-  }
-
-  return <DeveloperTicketsPage developerIndex={developerIndex} />;
+  return <DeveloperTicketsPage developerId={developerId} />;
 };
 
 export default DeveloperTicketsPageWrapper;

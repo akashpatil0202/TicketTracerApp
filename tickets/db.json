@@ -3,22 +3,17 @@
     {
       "id": 1,
       "username": "admin",
-      "password": "1234"
-    },
-    {
-      "id": 2,
-      "username": "user",
-      "password": "1234"
+      "password": "12345"
     }
   ],
   "teamLeads": [
     {
-      "id": 1,
-      "name": "Alice Smith",
+      "id": "1",
+      "name": "Swapnil Vhanale",
       "developers": [
         {
           "id": "1",
-          "name": "Swapnil Vhanale",
+          "name": "Alice",
           "tickets": [
             {
               "id": 1,
@@ -91,11 +86,11 @@
       ]
     },
     {
-      "id": 2,
-      "name": "Bob Johnson",
+      "id": "2",
+      "name": "Omkar Mankapure",
       "developers": [
         {
-          "id": "3",
+          "id": "1",
           "name": "Santosh Divate",
           "tickets": [
             {
@@ -131,7 +126,7 @@
           ]
         },
         {
-          "id": "4",
+          "id": "2",
           "name": "Omkar Mankapure",
           "tickets": [
             {
@@ -169,12 +164,12 @@
       ]
     },
     {
-      "id": 3,
-      "name": "Charlie Brown",
+      "id": "3",
+      "name": "Ajit Vandure",
       "developers": [
         {
-          "id": "5",
-          "name": "Ajit Vandure",
+          "id": "1",
+          "name": "Charlie Brown",
           "tickets": [
             {
               "id": 1,
@@ -209,7 +204,7 @@
           ]
         },
         {
-          "id": "6",
+          "id": "2",
           "name": "John Wick",
           "tickets": [
             {
