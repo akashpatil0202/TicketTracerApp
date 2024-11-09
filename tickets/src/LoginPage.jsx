@@ -24,78 +24,65 @@ const LoginPage = () => {
     e.preventDefault();
     setLoginError("");
 
-    if (!credentials.username && !credentials.password) {
+    if (!credentials.username || !credentials.password) {
       setLoginError("Please enter your username and password.");
       return;
     }
 
-    if (!credentials.username) {
-      setLoginError("Please enter your username.");
-      return;
-    }
-
-    if (!credentials.password) {
-      setLoginError("Please enter your password.");
-      return;
-    }
-
     try {
-      const response = await axios.get("http://localhost:3001/admins");
-      const admins = response.data;
-
-      const admin = admins.find(
-        (admin) =>
-          admin.username === credentials.username &&
-          admin.password === credentials.password
+      const response = await axios.post(
+        "http://localhost:8080/admins/login",
+        credentials
       );
-
-      if (admin) {
-        await login(admin);
+      if (response.status === 200) {
+        await login(response.data);
         navigate("/home");
       } else {
         setLoginError("Invalid username or password");
       }
     } catch (error) {
-      console.error("Error fetching admins:", error);
+      console.error("Error during login:", error);
       setLoginError("Login failed. Please try again.");
     }
   };
 
   return (
     <>
-      <div className="login-container">
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Enter Username"
-              value={credentials.username}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Enter Password"
-              value={credentials.password}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          {loginError && <div className="error">{loginError}</div>}
-          {error && <div className="error">{error}</div>}
-          <button type="submit" className="login-button">
-            Login
-          </button>
-        </form>
+      <div className="login-page-container">
+        <div className="login-container">
+          <h1>Login</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+                value={credentials.username}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+                value={credentials.password}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            {loginError && <div className="error">{loginError}</div>}
+            {error && <div className="error">{error}</div>}
+            <button type="submit" className="login-button">
+              Login
+            </button>
+          </form>
+        </div>
       </div>
       <div className="logo">
         <img src={logo} alt="logo" />

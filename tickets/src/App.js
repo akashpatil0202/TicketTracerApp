@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./Homepage";
+import DeveloperTicketsPage from "./Developerticketpage";
 import DeveloperTicketsPageWrapper from "./Developerticketspagewrapper";
 import LoginPage from "./LoginPage";
 import { AuthProvider } from "./AuthContext";
@@ -11,7 +12,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginPage />} />
-
           <Route
             path="/home"
             element={
@@ -20,11 +20,11 @@ function App() {
               </PrivateRoute>
             }
           />
-
           <Route
             path="/developer/:developerId"
             element={
               <PrivateRoute>
+                {/* <DeveloperTicketsPage /> */}
                 <DeveloperTicketsPageWrapper />
               </PrivateRoute>
             }
